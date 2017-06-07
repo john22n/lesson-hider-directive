@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body ng-app="directivePractice">
+    <div ng-controller="lessonCtrl">
+
+        <ul >
+        <lesson-hider day-alert="announceDay(lesson, day)" ng-repeat="lessons in lesson" lesson='lessons'></lesson-hider>
+        </ul>
+
+    </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="app.js"></script>
+<script src="js/lessonCtrl.js"></script>
+<script src="js/lessonHider.js"></script>
+<script src="js/lessonService.js"></script>
+</body>
+</html>
